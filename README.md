@@ -49,6 +49,9 @@ The companies main database structure as seen below consists of four tables: `sa
 
 ## _**3. Executive Summary**_
 ### *Overview of Findings*
-Favorita's revenue grew from $140M (2013) to $289M (2016) (). Transactions slightly increased (29K to 31K), but average transaction value rose to $9.7 (from $4.8), showing higher customer spending.
-Seasonal sales patterns show a clear peak in December around the Christmas holiday, followed by a decline in early January. Maintaining a robust supply chain is crucial to capitalize on these seasonal fluctuations. The grocery/food product category remains the primary driver of our performance.
-Revenue contribution is heavily concentrated geographically, with Pinchita representing our largest market, contributing over 54% of total revenue and the highest number of stores (19 locations accounting for 35.2% nationally).
+
+Favorita's revenue grew from $140M (2013) to $289M (2016). Transactions slightly increased (29K to 31K), but average transaction value rose to $9.7 (from $4.8), showing higher customer spending. While Favorita's revenue has grown significantly, transaction volume suggests room for expanding the customer base
+
+[Yearly Performance Executive](images/Charts&Tables/Yearly_executive.png)
+
+
