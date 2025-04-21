@@ -117,7 +117,9 @@ An interactive Tableau dashboard used to report and explore sales trends can be 
 
 ![Last 12 month sales by States](images/Charts&Tables/StateSales_L12M.png)
 
-- The customer reference in difference location is alike: The product distribution seemed to be similar betweens stores (with grocery being the dominating goods).
+- The customer reference in difference location is consistently alike: The product distribution seemed to be similar betweens locations (with grocery being the dominating goods).
+
+![Total Sales by Product categories across some major states](images/Charts&Tables/StatesandProduct.png)
 
 
 
