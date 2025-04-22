@@ -57,7 +57,7 @@ An interactive Tableau dashboard used to report and explore sales trends can be 
 
 ![Sales Overview Dashboar](images/Charts&Tables/Overview_dashborad.png)
 
-## _**4. Insight Deepdive**_
+## _**4. Insights Deep dive:**_
 ### *4.1. Main Insight 1: Market expansion strategy is recommended to promote successful growth.*
 
 - **Significant Revenue Expansion (2013-2016):** Revenue grew substantially, *from $140 million in 2013 to $289 million* in 2016.  This growth was most pronounced in 2014, with a 49% increase, driven by a significant rise in average transaction value from $4.8 to $9.3, despite relatively consistent transaction volume.
@@ -115,7 +115,7 @@ An interactive Tableau dashboard used to report and explore sales trends can be 
 - All states shared the same grow trend over the years.
 - Last 12 months, **Pichincha (53.4%, 19 stores)** and **Guayas (15.3%, 11 stores)** are top performers. Second-tier states (Azuay, Tungurahua, Santo Domingo de los Tsachilas, Manabi, El Oro) contribute 3.3%-5.2% and average 2 stores. Lower-performing locations have 1 store (Pastaza lowest).
 
-- The customer reference in difference location is consistently alike: The product distribution seemed to be similar betweens locations (with grocery being the dominating goods).
+- The customer reference in difference location is consistently alike: The product distribution seemed to be similar between locations (with grocery being the dominating goods).
 
 ![Total Sales by Product categories across some major states](images/Charts&Tables/StatesandProduct.png)
 
@@ -123,8 +123,32 @@ An interactive Tableau dashboard used to report and explore sales trends can be 
 
 ![Sales by Store types in major states](images/Charts&Tables/Stores_types.png)
 
+### *4.4. Sales Forecasting:*
 
 
+
+## _**5. Recommendations**_
+
+Based on the insights and findings above, we would recommend the Favorita Store managers, Sales and Marketing team to consider the following: 
+
+**1. The key driver of sales growth is average spending per transaction.** To ensure sustainable growth, the strategy should shift toward market expansion by:
+  - Investing in new stores to tap into untapped markets
+  - Boosting customer traffic through targeted campaigns, loyalty programs, promotions, or local partnerships to increase transaction volume
+
+**2. The current incremental store rollout has limited impact.** Consider adopt cluster-based expansion or regional hub models to scale more effectively.
+
+**3. Sales territories are heavily concentrated in central regions**, especially Pichincha, highlighting room for expansion. Options can be tailored to current sales goals and financial priorities:
+  - Expand within high-growth areas like Pichincha for a cost-efficient approach
+  - Invest in developing potential markets like Azuay, Tungurahua, or Santo Domingo de los Tsáchilas for a more aggressive growth strategy
+
+**4. Prioritize High-Impact Store Formats:**
+  - Focus expansion efforts on Type A and D stores, which are proven top performers and are heavily represented in high-revenue areas.
+  - Evaluate market demographics to identify where these formats could replicate their success.
+
+**5. Promotional sales surged, while consumer interest is gradually shifting from core categories (grocery, beverages) to lifestyle products.** Captivate and optimize these trends by: 
+  - Optimize promotion strategy to maintain revenue while protecting margins with data-driven campaigns.
+  - Expand lifestyle categories to align with shifting consumer preferences, while sustaining grocery as the core anchor.
+  - Customize Store Offerings by Region: Tailor product and promotion mixes based on store type and regional performance
 
 
 
