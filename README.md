@@ -123,7 +123,17 @@ An interactive Tableau dashboard used to report and explore sales trends can be 
 
 ![Sales by Store types in major states](images/Charts&Tables/Stores_types.png)
 
-### *4.4. Sales Forecasting:*
+### *4.4. Sales Forecasting Model:*
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sales forecasting was conducted using powerful decision tree models—XGBoost and LightGBM—to identify the most impactful drivers of sales performance:
+- The most influential factors are store-specific performance (`store_nbr`), product category (`family`), and the presence of promotions (`onpromotion`), indicating that store characteristics and marketing efforts heavily influence sales predictions.
+- Seasonality effects are clearly captured through variables like day of year (`day_n`), month, and weekday, aligning with observed annual sales patterns.
+- Holidays and special events (`holiday`), show minimal impact, suggesting they are not key drivers in the current forecasting model. 
+- `dcoilwtico` (daily oil price based on the WTI benchmark) showed moderate importance, as changes in oil prices can influence transportation and distribution costs, potentially affecting product availability, pricing, and overall consumer spending behavior.
+![XGBoost Features Importance](images/Charts&Tables/Xgmodel_importance.png)
+
+The future revenue is forcasted based on the assumption that the future promotion plan similar to current year.
+
 
 
 
