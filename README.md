@@ -113,14 +113,15 @@ An interactive Tableau dashboard used to report and explore sales trends can be 
 **c. Sales teritories: Highly concentrated in Pinchita**
 - *Sales distribution is concentrated in major states/cities* (Pichincha/Quito, Guayas/Guayaquil) with over **50% contribution**, showing minimal fluctuation over 12 months.
 - All states shared the same grow trend over the years.
-- Pichincha (53.4%, 19 stores) and Guayas (15.3%, 11 stores) are top performers. Second-tier states (Azuay, Tungurahua, Santo Domingo de los Tsachilas, Manabi, El Oro) contribute 3.3%-5.2% and average 2 stores. Lower-performing locations have 1 store (Pastaza lowest).
-
-![Last 12 month sales by States](images/Charts&Tables/StateSales_L12M.png)
+- Last 12 months, **Pichincha (53.4%, 19 stores)** and **Guayas (15.3%, 11 stores)** are top performers. Second-tier states (Azuay, Tungurahua, Santo Domingo de los Tsachilas, Manabi, El Oro) contribute 3.3%-5.2% and average 2 stores. Lower-performing locations have 1 store (Pastaza lowest).
 
 - The customer reference in difference location is consistently alike: The product distribution seemed to be similar betweens locations (with grocery being the dominating goods).
 
 ![Total Sales by Product categories across some major states](images/Charts&Tables/StatesandProduct.png)
 
+- Up to now, **Type A ($353M) and Type D ($351M)** are the top-performing store types. In the leading state Pichincha, sales are heavily concentrated in these two types, with 81.8% of Type A and 53.5% of Type D sales. In contrast, Other states generate more revenue from Types C ($115.8M), D ($112.6M), and E ($16M-$43M), indicating a broader distribution of store performance outside Pichincha.
+
+![Sales by Store types in major states](images/Charts&Tables/Stores_types.png)
 
 
 
