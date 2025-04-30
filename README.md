@@ -51,6 +51,8 @@ An interactive Tableau dashboard used to report and explore sales trends can be 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The business achieved **strong cumulative growth** with **$1B in total revenue** and **141M total transactions**, reflecting a +39.9% revenue increase and +29.2% transaction growth from the same period prior year.While Favorita's revenue has grown significantly, transaction volume suggests room for expanding the customer base.
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Following the last actual sales in August 2017, the forecast shows a **+19.1%** YoY sales growth to **$344M at the end of 2017**, slightly below 2016’s 19.8%, with transactions expected to increase by **+6.7%** over 2016.
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seasonal sales patterns show a clear peak in December around the Christmas holiday, followed by a decline in early January. Maintaining a robust supply chain is crucial to capitalize on these seasonal fluctuations. 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store expansion remained steady, reaching 53 active locations by 2017. Revenue contribution is heavily concentrated geographically, with **Pinchita** representing our **largest market**, contributing over 54% of total revenue and the highest number of stores (19 locations). Category sales show broad growth across segments, with no major volatility. **Grocery and beverage products** made the largest contribution to total sales.
@@ -123,21 +125,25 @@ An interactive Tableau dashboard used to report and explore sales trends can be 
 
 ![Sales by Store types in major states](images/Charts&Tables/Stores_types.png)
 
-### *4.4. Sales Forecasting Model:*
-
+## _**5. Sales Forecasting Model:**_
+### *5.1. Sales forecasting using Decision tree based model:*
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sales forecasting was conducted using powerful decision tree models—XGBoost and LightGBM—to identify the most impactful drivers of sales performance:
-- The most influential factors are store-specific performance (`store_nbr`), product category (`family`), and the presence of promotions (`onpromotion`), indicating that store characteristics and marketing efforts heavily influence sales predictions.
+- The most influential factors are **store-specific performance (`store_nbr`), product category (`family`), and the presence of promotions (`onpromotion`)**, indicating that store characteristics and marketing efforts heavily influence sales predictions.
 - Seasonality effects are clearly captured through variables like day of year (`day_n`), month, and weekday, aligning with observed annual sales patterns.
 - Holidays and special events (`holiday`), show minimal impact, suggesting they are not key drivers in the current forecasting model. 
-- `dcoilwtico` (daily oil price based on the WTI benchmark) showed moderate importance, as changes in oil prices can influence transportation and distribution costs, potentially affecting product availability, pricing, and overall consumer spending behavior.
+- **`dcoilwtico` (daily oil price based on the WTI benchmark)** showed moderate importance, as changes in oil prices can influence transportation and distribution costs, potentially affecting product availability, pricing, and overall consumer spending behavior.
 ![XGBoost Features Importance](images/Charts&Tables/Xgmodel_importance.png)
 
-The future revenue is forcasted based on the assumption that the future promotion plan similar to current year.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To apply the forecast model, the current promotion plan is assumed to continue for each product family.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The transaction volume is forecasted based on projected sales, assuming no new store openings during the forecast period.
+
+### *5.2. Projections:*
 
 
 
 
-## _**5. Recommendations**_
+## _**6. Recommendations**_
 
 Based on the insights and findings above, we would recommend the Favorita Store managers, Sales and Marketing team to consider the following: 
 
