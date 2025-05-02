@@ -138,8 +138,11 @@ An interactive Tableau dashboard used to report and explore sales trends can be 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The transaction volume is forecasted based on projected sales, assuming no new store openings during the forecast period.
 
-### *5.2. Projections:*
-
+### *5.2. Key Projection Insights:*
+1. **Strong Full-Year 2017 Performance:** 2017 is expected to conclude as a very strong year. Total sales reached **~$344M (+19.1% YoY vs 2016)** and total transactions were **~33K (+6.7% YoY vs 2016)**, continuing the positive multi-year trend.
+2. **Revenue Forecast Overestimation:** Despite strong full-year 2017 results, actual sales *($273M)* **significantly underperformed projections** *($341M)* by roughly 25% from October 2016 onwards. Although the historical model shows 94% accuracy, immediate action is needed to optimize current trends and achieve the $344M forecast target by August 2018. Failure to do so may result in missing this goal.
+3. **Stable Transaction Volume Historically and in Projections:** The volume of transactions has shown stability historically, without significant fluctuations. This consistent trend is projected to continue over the next 12 months. With a **forecasting accuracy of 81%** for transactions, the model demonstrates a reasonable level of reliability in predicting this metric.
+4. **Inventory Planning:** Plan inventory based on projections, with a focus on the forecasted sales peak from late 2017 to early 2018 to prevent understocking. Product category contributions are expected to remain stable, with grocery continuing as the primary consumption group.
 
 
 
