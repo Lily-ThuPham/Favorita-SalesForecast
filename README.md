@@ -1,11 +1,21 @@
 # **Favorita Retails Sales analysis and Forecast**
 _**Author**: Thu Pham | **Date**: 03/2025_
 
+## *Table of Contents*
+
+1. [Project Background](#1-project-background)  
+2. [Data Structure & Initial Checks](#2-data-structure--initial-checks)  
+3. [Executive Summary](#3-executive-summary)  
+4. [Insights Deep Dive](#4-insights-deep-dive)  
+5. [Sales Forecasting Model](#5-sales-forecasting-model)  
+6. [Recommendations](#6-recommendations)  
+
+
 ## _**1. Project Background**_
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Favorita is one of the most prominent retail chains in Ecuador, boasting nationwide presence and offering an extensive range of goods across various categories. With retail being a rapidly growing sector in the region, Favorita has the opportunity to leverage market expansion trends to boost performance. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Favorita Co.** is one of the most prominent retail chains in *Ecuador*, boasting nationwide presence and offering an extensive range of goods across various categories. With retail being a rapidly growing sector in the region, Favorita has the opportunity to leverage market expansion trends to boost performance. 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This project aims to analyze Favorita's retail sales data and forecast sales for the next 12–24 months. The insights will assist the Supply Chain team in optimizing inventory management, while also supporting Store Management teams in improving store performance (total revenues, growth, average sales,…) and capitalizing on emerging opportunities in Ecuador's dynamic retail sector. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This project aims to analyze **Favorita's retail sales data and forecast sales** for the next 12 months. The insights will assist the Supply Chain team in optimizing inventory management, while also supporting Store Management teams in improving store performance (total revenues, growth, average sales,…) and capitalizing on emerging opportunities in Ecuador's dynamic retail sector. 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Insights and recommendations are provided on the following key objectives:
 -	**Objective 1**: Indentify sales trend and revenue growth, discover seasonality patterns.
@@ -17,7 +27,7 @@ The Python codes used to inspect and clean the data for this analysis can be fou
 
 Targed SQL queries regarding various business questions can be found here [link].
 
-An interactive Tableau dashboard used to report and explore sales trends can be found here [link].
+An interactive Power BI dashboard used to report and explore sales trends can be found here [link](https://app.powerbi.com/view?r=eyJrIjoiNDI2ZTNmYTQtNmMyZi00NDNhLWI0OTEtNzFiNmY1NzY0M2U3IiwidCI6IjE2NzIwYmVkLTY1ZWItNGFhMi04ZjMwLWQxY2UxNzBjZjAwMCIsImMiOjEwfQ%3D%3D&embedImagePlaceholder=true).
 
 ## _**2. Data Structure & Initial Checks**_
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The companies main database structure as seen below consists of four tables: `sale_table`, `transaction`, `holiday_events`, `store` and `oil_price` with a total row count of over 300,000 records. A description of each table is as follows: 
@@ -49,20 +59,20 @@ An interactive Tableau dashboard used to report and explore sales trends can be 
 ## _**3. Executive Summary**_
 ### *Overview of Findings (January 2013 - August 2017)*
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The business achieved **strong cumulative growth** with **$1B in total revenue** and **141M total transactions**, reflecting a +39.9% revenue increase and +29.2% transaction growth from the same period prior year.While Favorita's revenue has grown significantly, transaction volume suggests room for expanding the customer base.
+![Sales Overview Dashboar](images/Charts&Tables/Overview_dashborad.png)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Following the last actual sales in August 2017, the forecast shows a **+19.1%** YoY sales growth to **$344M at the end of 2017**, slightly below 2016’s 19.8%, with transactions expected to increase by **+6.7%** over 2016.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The business achieved **strong cumulative growth** with **over $1B in total revenue** and **141M total transactions**, reflecting a +39.9% revenue increase and +29.2% transaction growth from the same period prior year.While Favorita's revenue has grown significantly, transaction volume suggests room for expanding the customer base.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Following the last actual sales in August 2017, the forecast shows a **+14.1%** YoY sales growth to **$329M at the end of 2017**, moderately below 2016’s +19.8%, with transactions expected to **increase by +6.7%** over 2016.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seasonal sales patterns show a clear peak in December around the Christmas holiday, followed by a decline in early January. Maintaining a robust supply chain is crucial to capitalize on these seasonal fluctuations. 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store expansion remained steady, reaching 53 active locations by 2017. Revenue contribution is heavily concentrated geographically, with **Pinchita** representing our **largest market**, contributing over 54% of total revenue and the highest number of stores (19 locations). Category sales show broad growth across segments, with no major volatility. **Grocery and beverage products** made the largest contribution to total sales.
-
-![Sales Overview Dashboar](images/Charts&Tables/Overview_dashborad.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store expansion remained steady, reaching 53 active locations by 2017. Revenue contribution is heavily concentrated geographically, with **Pinchita** representing our **largest market**, contributing over 54% of total revenue and the highest number of stores (19 locations). Category sales show broad growth across segments, with no major volatility. **Grocery and beverage products made the largest contribution** to total sales.
 
 ## _**4. Insights Deep dive:**_
 ### *4.1. Main Insight 1: Market expansion strategy is recommended to promote successful growth.*
 
-- **Significant Revenue Expansion (2013-2016):** Revenue grew substantially, *from $140 million in 2013 to $289 million* in 2016.  This growth was most pronounced in 2014, with a 49% increase, driven by a significant rise in average transaction value from $4.8 to $9.3, despite relatively consistent transaction volume.
+- **Significant Revenue Expansion (2013-2016):** Revenue grew substantially, *from $140 million in 2013 to $289 million* in 2016.  This growth was most pronounced in 2014, with a +49% increase, driven by a significant rise in average transaction value from $4.8 to $9.3, despite relatively consistent transaction volume.
 - **Potential for Transaction Growth:** While average transaction values increased, the size of sales territories remained unchanged. This suggests that the revenue growth was primarily fueled by higher-value purchases, potentially due to product price increases or expanded product offerings. 
 
 ![Yearly Performance Metrics](images/Charts&Tables/Yearly_metrics.png)
@@ -85,7 +95,7 @@ An interactive Tableau dashboard used to report and explore sales trends can be 
 
 ![Daily Sales and 30-days-Moving Average](images/Charts&Tables/DailySales_30MA.png)
 
-**b. Weekdays and specific holidays, events:**
+**b. Weekdays pattern and specific holidays, events impact:**
 - Cyber Monday's Seasonality Index was consistently higher than Black Friday's (2014-2016), indicating a stronger impact on spending.
 
 ![Cyber Monday and Black Friday Seasonality Index](images/Charts&Tables/cybermonday.png)
