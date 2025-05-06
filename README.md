@@ -78,7 +78,7 @@ An interactive Tableau dashboard used to report and explore sales trends can be 
 - *Consistent Year-End Peak:* Sales consistently rise from November(Black Friday, Cyber Monday) to December, where there’s no sell report on national holiday (Navidad/Chrismast).
 - *A sharp decline occurs in January* (minimal sales in Christmast week/ New Year Holiday / Primer dia del ano) following the December holiday peak, followed by a recovery in March. April typically sees a slight decrease in sales, with the exception of 2016 ("Terremoto Manabí" earthquake on April, 2016)
 
-![Metrics Monthly Trend by each Year](images/Charts&Tables/MonthlyMetrics_Trend_Gr)
+![Metrics Monthly Trend by each Year](images/Charts&Tables\MonthlyMetrics_Trend_Gr.png)
 
 - *Stable Transaction Value:* Average purchase value remains relatively stable despite sales fluctuations.
 - Despite these fluctuations, the moving average of daily sales indicates a gradual sales growth from June to August, leading into the peak season.
@@ -129,26 +129,35 @@ An interactive Tableau dashboard used to report and explore sales trends can be 
 ### *5.1. Sales forecasting using Decision tree based model:*
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sales forecasting was conducted using powerful decision tree models—XGBoost and LightGBM—to identify the most impactful drivers of sales performance:
 - The most influential factors are **store-specific performance (`store_nbr`), product category (`family`), and the presence of promotions (`onpromotion`)**, indicating that store characteristics and marketing efforts heavily influence sales predictions.
-- Seasonality effects are clearly captured through variables like day of year (`day_n`), month, and weekday, aligning with observed annual sales patterns.
+- Seasonality effects are clearly captured through variables such as elasped days (`day_n`), giving month, and weekday, aligning with observed annual sales patterns.
 - Holidays and special events (`holiday`), show minimal impact, suggesting they are not key drivers in the current forecasting model. 
 - **`dcoilwtico` (daily oil price based on the WTI benchmark)** showed moderate importance, as changes in oil prices can influence transportation and distribution costs, potentially affecting product availability, pricing, and overall consumer spending behavior.
-![XGBoost Features Importance](images/Charts&Tables/Xgmodel_importance.png)
+![XGBoost Features Importance](images/Charts&Tables/output_lgbmodel_sales.png)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To apply the forecast model, the current promotion plan is assumed to continue for each product family.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The transaction volume is forecasted based on projected sales, assuming no new store openings during the forecast period.
 
 ### *5.2. Key Projection Insights:*
-1. **Strong Full-Year 2017 Performance:** 2017 is expected to conclude as a very strong year. Total sales reached **~$344M (+19.1% YoY vs 2016)** and total transactions were **~33K (+6.7% YoY vs 2016)**, continuing the positive multi-year trend.
-2. **Revenue Forecast Overestimation:** Despite strong full-year 2017 results, actual sales *($273M)* **significantly underperformed projections** *($341M)* by roughly 25% from October 2016 onwards. Although the historical model shows 94% accuracy, immediate action is needed to optimize current trends and achieve the $344M forecast target by August 2018. Failure to do so may result in missing this goal.
-3. **Stable Transaction Volume Historically and in Projections:** The volume of transactions has shown stability historically, without significant fluctuations. This consistent trend is projected to continue over the next 12 months. With a **forecasting accuracy of 81%** for transactions, the model demonstrates a reasonable level of reliability in predicting this metric.
+1. **Strong Full-Year 2017 Performance:** 2017 is expected to conclude as a strong year. Total sales reached **~$329M (+14.1% YoY vs 2016)** and total transactions were **~33K (+6.7% YoY vs 2016)**, continuing the positive multi-year trend.
+ ![2017 Actual and Forecast Performance - Forecast Dashboard](images/Charts&Tables/Forecast_dashboard.png)
+2. **Forecasted Revenue Growth:** The forecast projects $135M revenue for August-December 2017, a 20.7% increase compared to the same period last year. However, this lead to a lower annual revenue growth compared to the growth from 2016 (14.1% vs. 19.8%), suggesting a potential shift in growth trajectory.
+   -  **Growth Rate Deceleration potential interpretations**: the Xgboost model might be capturing a perceived cyclical growth pattern that appears to have started around 2015, as suggested by the revenue trend chart. The forecast for 2017 and beyond could be influenced by the model's extrapolation of this assumed cycle.
+   ![Growth trend of Actual and Forecast Revenue](images/Charts&Tables/FC_revenue.png)
+
+3. **Stable Transaction Volume Historically and in Projections:** The volume of transactions has shown stability historically, without significant fluctuations. Forecasted transactions for August-December 2017 are **$13M, a 9.5% increase YoY**, indicating an expectation of continued customer activity growth which conclude the year 2017 total transactions volume at **33M transactions and +6.7% YoY growth**. This consistent trend is projected to continue over the next 12 months. With a **forecasting accuracy of 81%** for transactions, the model demonstrates a reasonable level of reliability in predicting this metric.
+
 4. **Inventory Planning:** Plan inventory based on projections, with a focus on the forecasted sales peak from late 2017 to early 2018 to prevent understocking. Product category contributions are expected to remain stable, with grocery continuing as the primary consumption group.
+### *5.3. Caveats and further consideration:**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The confirmation of the recurring cyclical pattern mentioned above is not yet statistically robust. The forecast revenue deviation could be attributed to other factors, such as specific market situatation, econimic headwinds, or competitor actions, rather than a consistent cyclical behavior.
 
-
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Therefore, it is crucial to consider: 
+ - Identify underlying drivers and the applied strategic plan.
+ - Incorporate external factors such as economic indicators, competitor actitivies,etc.
+ - Monitor model performance to adapt to any evolving patterns. 
 ## _**6. Recommendations**_
 
-Based on the insights and findings above, we would recommend the Favorita Store managers, Sales and Marketing team to consider the following: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Based on the insights and findings above, we would recommend the Favorita Store managers, Sales and Marketing team to consider the following: 
 
 **1. The key driver of sales growth is average spending per transaction.** To ensure sustainable growth, the strategy should shift toward market expansion by:
   - Investing in new stores to tap into untapped markets
@@ -168,6 +177,9 @@ Based on the insights and findings above, we would recommend the Favorita Store 
   - Optimize promotion strategy to maintain revenue while protecting margins with data-driven campaigns.
   - Expand lifestyle categories to align with shifting consumer preferences, while sustaining grocery as the core anchor.
   - Customize Store Offerings by Region: Tailor product and promotion mixes based on store type and regional performance
+
+**6. 
+
 
 
 
