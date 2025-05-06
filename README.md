@@ -90,7 +90,7 @@ The Python code for enhancements which have been made to the dataset can be foun
 - *Consistent Year-End Peak:* Sales consistently rise from November(Black Friday, Cyber Monday) to December, where there’s no sell report on national holiday (Navidad/Chrismast).
 - *A sharp decline occurs in January* (minimal sales in Christmast week/ New Year Holiday / Primer dia del ano) following the December holiday peak, followed by a recovery in March. April typically sees a slight decrease in sales, with the exception of 2016 ("Terremoto Manabí" earthquake on April, 2016)
 
-![Metrics Monthly Trend by each Year](images/Charts&Tables\MonthlyMetrics_Trend_Gr.png)
+![Metrics Monthly Trend by each Year](images/Charts&Tables/MonthlyMetrics_Trend_Gr.png)
 
 - *Stable Transaction Value:* Average purchase value remains relatively stable despite sales fluctuations.
 - Despite these fluctuations, the moving average of daily sales indicates a gradual sales growth from June to August, leading into the peak season.
