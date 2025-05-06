@@ -149,9 +149,18 @@ An interactive Tableau dashboard used to report and explore sales trends can be 
 
 4. **Inventory Planning:** Plan inventory based on projections, with a focus on the forecasted sales peak from late 2017 to early 2018 to prevent understocking. Product category contributions are expected to remain stable, with grocery continuing as the primary consumption group.
 ### *5.3. Caveats and further consideration:**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The confirmation of the recurring cyclical pattern mentioned above is not yet statistically robust. The forecast revenue deviation could be attributed to other factors, such as specific market situatation, econimic headwinds, or competitor actions, rather than a consistent cyclical behavior.
+**Assumptions:**
+  - *Events and Holidays for 2018:* The events and holidays data for 2018 are generated based on historical patterns observed in the dataset. Any deviations in actual events or holidays could impact the forecast accuracy.
+  - *Promotional Data:* The `onpromotion` data for forward-looking forecasts is generated based on the historical contributions of promotional activities. This assumes that future promotional strategies will align closely with past trends.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Therefore, it is crucial to consider: 
+**Model Accuracy:**
+  - The forecasting model's accuracy is approximately 90% for revenue and 81% for transactions, . While this is reasonable, it leaves room for potential deviations, particularly in long-term projections.
+
+**Forecasting Model Limitations:**
+  - The forecasting models (XGBoost and LightGBM) rely on historical data and identified patterns. Unforeseen events, such as economic downturns, natural disasters, or competitor actions, may lead to deviations from the forecast.
+  - The confirmation of the recurring cyclical pattern mentioned above is not yet statistically robust. The forecast revenue deviation could be attributed to other factors, such as specific market situatation, econimic headwinds, or competitor actions, rather than a consistent cyclical behavior.
+
+**Further considerations:**
  - Identify underlying drivers and the applied strategic plan.
  - Incorporate external factors such as economic indicators, competitor actitivies,etc.
  - Monitor model performance to adapt to any evolving patterns. 
@@ -191,5 +200,8 @@ An interactive Tableau dashboard used to report and explore sales trends can be 
  - Prioritize management of perishable goods within the dominant grocery segment, focusing on shelf-life and efficient stock rotation to minimize waste and ensure product freshness.
 
 
+## _**End of Document**_
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This document provides a comprehensive analysis of Favorita's retail sales performance, key insights, forecasting models, and actionable recommendations. The findings aim to support strategic decision-making and drive sustainable growth for Favorita in the dynamic retail market of Ecuador. For further inquiries or detailed discussions, please contact the author.
 
 
