@@ -178,7 +178,17 @@ An interactive Tableau dashboard used to report and explore sales trends can be 
   - Expand lifestyle categories to align with shifting consumer preferences, while sustaining grocery as the core anchor.
   - Customize Store Offerings by Region: Tailor product and promotion mixes based on store type and regional performance
 
-**6. 
+**6. Capitalize on Strong 2017 Trajectory:** Building on the projected robust full-year sales growth of 14.1% YoY and transaction growth of 6.7% YoY by focus on conserving initiatives (targeted campaigns, loyalty programs, promotions, local partnerships, inventory management) that align with the primary driver of sales growth: average spending per transaction. 
+
+**7. To address potential forecast discrepency**, it is recommended to refine the forecast for the rest of 2017 as well as budgeting for 2018: 
+ - Adjust the model with considerations mentioned in *Section 5.3.*
+ - Supplementing forecast outputs with thorough market analysis, competitor benchmarking, and investigation of prevailing conditions.
+ - Incorporating concrete strategic plans, such as upcoming promotional programs or store expansion campaigns, into forecast adjustments.
+
+**8. Optimize Inventory Management for Sustained Performance:**
+ - Develop inventory scenario plans (conservative forecast, potential growth with new stores).
+ - Establish close monitoring of key inventory performance indicators (KPIs) and adopt flexible inventory management protocols (e.g., shorter lead times, more frequent deliveries, responsive ordering) to adapt to demand fluctuations.
+ - Prioritize management of perishable goods within the dominant grocery segment, focusing on shelf-life and efficient stock rotation to minimize waste and ensure product freshness.
 
 
 
