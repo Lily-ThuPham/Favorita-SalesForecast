@@ -23,11 +23,13 @@ _**Author**: Thu Pham | **Date**: 03/2025_
 -	**Objective 3**: Utilize advanced forecasting models to predict sales trends accurately, expected revenue growth to offer recommendations on inventory optimizations. 
 
 
-The Python codes used to inspect and clean the data for this analysis can be found here [link].
+The Python codes used to inspect and clean the data for this analysis can be found here [link](EDA.ipynb).
 
-Targed SQL queries regarding various business questions can be found here [link].
+Targed SQL queries regarding various business questions can be found here [link](SQL_queries.sql).
 
 An interactive Power BI dashboard used to report and explore sales trends can be found here [link](https://app.powerbi.com/view?r=eyJrIjoiNDI2ZTNmYTQtNmMyZi00NDNhLWI0OTEtNzFiNmY1NzY0M2U3IiwidCI6IjE2NzIwYmVkLTY1ZWItNGFhMi04ZjMwLWQxY2UxNzBjZjAwMCIsImMiOjEwfQ%3D%3D&embedImagePlaceholder=true).
+
+The Python code for enhancements which have been made to the dataset can be found here [link](Populateddata.ipynb).
 
 ## _**2. Data Structure & Initial Checks**_
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The companies main database structure as seen below consists of four tables: `sale_table`, `transaction`, `holiday_events`, `store` and `oil_price` with a total row count of over 300,000 records. A description of each table is as follows: 
@@ -144,9 +146,7 @@ An interactive Power BI dashboard used to report and explore sales trends can be
 - **`dcoilwtico` (daily oil price based on the WTI benchmark)** showed moderate importance, as changes in oil prices can influence transportation and distribution costs, potentially affecting product availability, pricing, and overall consumer spending behavior.
 ![XGBoost Features Importance](images/Charts&Tables/output_lgbmodel_sales.png)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To apply the forecast model, the current promotion plan is assumed to continue for each product family.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The transaction volume is forecasted based on projected sales, assuming no new store openings during the forecast period.
+The Python code for model building can be found here [link](forecast_model.ipynb).
 
 ### *5.2. Key Projection Insights:*
 1. **Strong Full-Year 2017 Performance:** 2017 is expected to conclude as a strong year. Total sales reached **~$329M (+14.1% YoY vs 2016)** and total transactions were **~33K (+6.7% YoY vs 2016)**, continuing the positive multi-year trend.
